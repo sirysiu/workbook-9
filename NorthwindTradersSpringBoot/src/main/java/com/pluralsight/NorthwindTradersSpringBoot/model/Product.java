@@ -47,4 +47,10 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    // Override toString to print meaningful details about the product
+    @Override
+    public String toString() {
+        return String.format("Product ID: %d, Name: %s, Category: %s, Price: %.2f", productId, name, category, price);
+    }
 }

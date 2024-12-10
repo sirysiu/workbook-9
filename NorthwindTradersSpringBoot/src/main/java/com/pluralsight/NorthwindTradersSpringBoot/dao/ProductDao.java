@@ -1,9 +1,11 @@
 package com.pluralsight.NorthwindTradersSpringBoot.dao;
 
 import com.pluralsight.NorthwindTradersSpringBoot.model.Product;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public interface ProductDao {
 
     void addProduct(Product product);
