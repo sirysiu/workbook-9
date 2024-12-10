@@ -1,6 +1,7 @@
 package com.pluralsight.NorthwindTradersSpringBoot;
 
 
+import com.pluralsight.NorthwindTradersSpringBoot.dao.ProductDao;
 import com.pluralsight.NorthwindTradersSpringBoot.dao.SimpleProductDao;
 import com.pluralsight.NorthwindTradersSpringBoot.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import java.util.Scanner;
 public class NorthwindApplication implements CommandLineRunner {
 
     @Autowired
-    private SimpleProductDao productDao;
+    private ProductDao productDao;
 
     public static void main(String[] args) {
         SpringApplication.run(NorthwindApplication.class, args);

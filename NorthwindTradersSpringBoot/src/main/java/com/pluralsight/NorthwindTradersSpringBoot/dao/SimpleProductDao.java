@@ -26,10 +26,13 @@ public class SimpleProductDao implements ProductDao{
         return products;
     }
 
+
+    @Override
     public void deleteProduct(int productId) {
         products.removeIf(product -> product.getProductId() == productId);
     }
 
+    @Override
     public void updateProduct(int productId, String name, String category, double price) {
         for (Product product : products) {
             if (product.getProductId() == productId) {
@@ -41,6 +44,7 @@ public class SimpleProductDao implements ProductDao{
         }
     }
 
+    @Override
     public List<Product> searchByName(String name) {
         List<Product> result = new ArrayList<>();
         for (Product product : products) {

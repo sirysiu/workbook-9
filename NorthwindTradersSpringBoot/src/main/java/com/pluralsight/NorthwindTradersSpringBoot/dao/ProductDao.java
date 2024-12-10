@@ -10,4 +10,9 @@ public interface ProductDao {
     List<Product> getAllProduct();
 
 
+    void deleteProduct(int productId);
+
+    void updateProduct(int productId, String name, String category, double price);
+
+    List<Product> searchByName(String name);
 }
