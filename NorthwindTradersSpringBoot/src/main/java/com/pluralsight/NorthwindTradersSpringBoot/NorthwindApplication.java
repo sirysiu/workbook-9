@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.Scanner;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.pluralsight.NorthwindTradersSpringBoot.dao")  // Add this if needed
 public class NorthwindApplication implements CommandLineRunner {
 
     @Autowired
